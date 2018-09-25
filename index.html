@@ -17,6 +17,7 @@
   </header>
 
   <main id="maincontent">
+    <label for="map-container"  aria-labelledby="map-container">
     <section id="map-container">
       <div id="map"></div>
     </section>
@@ -48,11 +49,7 @@
   </footer>
 
   <script>
-      if('serviceWorker' in navigator) {
-          navigator.serviceWorker
-              .register('/serviceWorker.js')
-              .then(function() { console.log("Service Worker Registered"); });
-      }
+
   </script>
 
 </body>
