@@ -18,22 +18,22 @@
 
   <main id="maincontent">
     <label for="map-container"  aria-labelledby="map-container">
-    <section id="map-container">
+    <section id="map-container" role="application">
       <div id="map"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <label for="neighborhoods-select">
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+
+        <select id="neighborhoods-select" name="neighborhoods" aria-label="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        </label>
-        <label for="cuisines-select">
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+
+
+        <select id="cuisines-select" name="cuisines" aria-label="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
-        </label>
+
       </div>
       <ul id="restaurants-list"></ul>
     </section>
